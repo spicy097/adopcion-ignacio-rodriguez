@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBFFB9;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr 1fr auto auto;
+    grid-template-areas:
+        "header header header header header header header header"
+        "banner banner banner banner banner banner banner banner"
+        "section1 section1 section1 section1 section1 section1 section1 section1"
+        "section2 section2 section2 section2 section2 section2 section2 section2"
+        "section3 section3 section3 section3 section3 section3 section3 section3"
+        "section4 section4 section4 section4 section4 section4 section4 section4"
+        "footer footer footer footer footer footer footer footer";
+    width: 100%;
+    height: 100%;
+}
+
+
+.header {
+    grid-area: header;
+    /*FLEX HEADER INDEX*/
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.banner {
+    grid-area: banner;
+    display: flex;
+    flex-direction: column;
+}
+
+.section1 {
+    grid-area: section1;
+}
+
+.section2 {
+    grid-area: section2;
+    /*FLEX SECCION KOKOA INDEX*/
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+}
+
+.section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+}
+
+.section4 {
+    grid-area: section4;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: stretch;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
+
+/*NAV*/
+nav {
+    background-color: #754F44;
+    border-radius: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+header ul li {
+    display: inline;
+}
+
+header ul li a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #FBFFB9;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+header ul li a:hover {
+    background-color: rgba(237, 198, 157, 0.2);
+    border-radius: 15px;
+}
+
+/*IMAGEN BANNER*/
+.banner-img {
+    border-radius: 10px;
+}
+
+/*Titulos h2-h3*/
+.estilo-h2 {
+    text-align: center;
+    margin-top: 10px;
+    background-color: palegreen;
+    border: 2px solid palegreen;
+    border-radius: 35px;
+}
+
+/*SECCION 1*/
+.intro {
+    text-align: center;
+    margin-top: 10px;
+    background-color: rosybrown;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/*Todas las secciones*/
+.estilo-h3 {
+    text-align: center;
+    margin-top: 5px;
+    color: #754F44;
+}
+
+.texto-seccion-index {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+    border: 2px solid #754F44;
+}
+
+.img-seccion-index {
+    border-radius: 10px;
+}
+
+/*FOOTER*/
+.estilo-ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #FBFFB9;
+}
+
+footer {
+    background-color: #754F44;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*// FIN INDEX//*/
+
+/*   SECCION GALERIA   */
+/*   MOBILE   */
+.galeria-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "galeria-header galeria-header galeria-header galeria-header galeria-header galeria-header galeria-header galeria-header"
+        "galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1"
+        "galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa"
+        "galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi"
+        "galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny"
+        "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+    ;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-header {
+    grid-area: galeria-header;
+}
+
+.galeria-section1 {
+    grid-area: galeria-section1;
+
+}
+
+.galeria-kokoa {
+    grid-area: galeria-kokoa;
+    margin-top: 2rem;
+}
+
+.galeria-tobi {
+    grid-area: galeria-tobi;
+    margin-top: 2rem;
+}
+
+.galeria-jenny {
+    grid-area: galeria-jenny;
+    margin-top: 2rem;
+}
+
+.galeria-footer {
+    grid-area: galeria-footer;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.fotos-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.fotos-galeria img {
+    margin-left: 2px;
+    margin-top: 5px;
+    border: 2px solid #754F44;
+    border-radius: 15px;
+}
+/*FIN SECCION GALERIA*/
+
+/*MOBILE FIRST*/
+/*   SECCION TIENDA    */
+.tienda-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header"
+        "tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1"
+        "tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares"
+        "tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas"
+        "tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera"
+        "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+    ;
+}
+
+.tienda-header {
+    grid-area: tienda-header;
+}
+
+.tienda-section1 {
+    grid-area: tienda-section1;
+    margin-bottom: 10px;
+}
+
+.tienda-collares {
+    grid-area: tienda-collares;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tienda-correas {
+    grid-area: tienda-correas;
+}
+
+.tienda-remera {
+    grid-area: tienda-remera;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria-footer {
+    grid-area: galeria-footer;
+}
+
+.intro-p-tienda {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.productos-tienda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.productos-tienda h4 {
+    text-align: center;
+}
+
+.productos-tienda p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.productos-tienda img {
+    width: 150px;
+    border: 2px solid #754F44;
+    border-radius: 10px;
+}
+
+.productos-tienda-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*   SECCION ADOPTA   */
+
+.adopta-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header"
+        "adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1"
+        "adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2"
+        "adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3"
+        "adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer"
+    ;
+}
+
+.adopta-header {
+    grid-area: adopta-header;
+}
+
+.adopta-section1 {
+    grid-area: adopta-section1;
+}
+
+.adopta-section2 {
+    grid-area: adopta-section2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.adopta-section3 {
+    grid-area: adopta-section3;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.adopta-footer {
+    grid-area: adopta-footer;
+}
+
+.adopta-p {
+    color: #754F44;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.adopta-textos {
+    color: #754F44;
+    text-align: center;
+    font-weight: bold;
+}
+
+.adopta-h3 {
+    color: #754F44;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.adopta-div-img {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.adopta-div-img img {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+/*   SECCION CONTACTO   */
+
+.contacto-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header"
+        "contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1"
+        "contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2"
+        "contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer"
+    ;
+}
+
+.contacto-header {
+    grid-area: contacto-header;
+}
+
+.contacto-section1 {
+    grid-area: contacto-section1;
+}
+
+.contacto-section2 {
+    grid-area: contacto-section2;
+    margin-top: 10px;
+}
+
+.contacto-footer {
+    grid-area: contacto-footer;
+    margin-top: 10px;
+}
+
+.contacto-section1-p{
+    color: #754F44;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contacto-section2-p{
+    color: #754F44;
+    font-weight: bold;
+}
+
+.contacto-label{
+    margin-top: 10px;
+}
+
+.contacto-input{
+    padding: 5px;
+}
+
+.contacto-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.img:hover{
+    transform: scale(1.3);
+}
+
+.zoom {
+    transition: transform .2s; 
+}
+ 
+.zoom:hover {
+    transform: scale(1.5); 
+}
+
+
+/*MEDIAQUERYS*/
+/*MOBILE FIRST*/
+/*SECCION INDEX*/
+@media (min-width: 768px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto 1fr auto;
+        grid-template-areas:
+            ". . header header header header header header . ."
+            ". . banner banner banner banner banner banner . ."
+            ". . section1 section1 section1 section1 section1 section1 . ."
+            ". . section2 section2 section2 section2 section2 section2 . ."
+            ". . section3 section3 section3 section3 section3 section3 . ."
+            ". . section4 section4 section4 section4 section4 section4 . ."
+            "footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        /*FLEX HEADER INDEX*/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*NAVEGACION HEADER*/
+    .nav-ul {
+        display: flex;
+        justify-content: normal;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    header ul li a {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    /*FIN NAVEGACION HEADER*/
+
+    /*BANNER INICIAL*/
+    .banner {
+        margin-top: 20px;
+    }
+
+    /*TITULO H2*/
+    .estilo-h2 {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .intro {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    /*SECCION 2 = KOKOA*/
+    .section2 {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .div-seccion-index {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /*SECCION 3 = TOBI*/
+    .section3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*SECCION 4 = JENNY*/
+    .section4 {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    /*FIN INDEX*/
+    
+    /*SECCION GALERIA*/
+    .galeria-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            ". . galeria-header galeria-header galeria-header galeria-header galeria-header galeria-header . ."
+            ". . galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 . ."
+            ". . galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa . ."
+            ". . galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi . ."
+            ". . galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny . ."
+            "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+        ;
+    }
+
+    .galeria-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .fotos-galeria img {
+        margin-right: 5px;
+    }
+    /*FIN SECCION GALERIA*/
+
+    /*SECCION TIENDA*/
+    .tienda-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            ". . tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header . ."
+            ". . tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 . ."
+            ". . tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares . ."
+            ". . tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas . ."
+            ". . tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera . ."
+            "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+        ;
+    }
+
+    .tienda-header {
+        display: flex;
+        align-items: center;
+    }
+    /*FIN SECCION TIENDA*/
+
+    /*SECCION ADOPTA*/
+    .adopta-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            ". . adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header . ."
+            ". . adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 . ."
+            ". . adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 . ."
+            ". . adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 . ."
+            "adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer"
+        ;
+    }
+
+    .adopta-section2 {
+        align-items: center;
+    }
+
+    .adopta-section3 {
+        align-items: center;
+    }
+
+    .adopta-div-img {
+        flex-direction: row;
+    }
+
+    .adopta-div-img img {
+        margin-left: 5px;
+    }
+
+    .adopta-header {
+        display: flex;
+        align-items: center;
+    }
+    /*FIN SECCION ADOPTA*/
+
+    /*SECCION CONTACTO*/
+    .contacto-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            ". . contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header . ."
+            ". . contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 . ."
+            ". . contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 . ."
+            "contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer"
+        ;
+    }
+    .contacto-header{
+        display: flex;
+        align-items: center;
+    }
+    .contacto-form{
+        align-items: flex-start;
+    }
+    .contacto-button{
+        margin-top: 5px;
+    }
+    /*FIN SECCION CONTACTO*/
+}
