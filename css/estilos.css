@@ -83,10 +83,19 @@ nav {
     justify-content: center;
 }
 
+/*Comportamiento bootstrap. Agregado padding y margin 0 y align-items: center (antes no estaba)*/
 .nav-ul {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: auto;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
+
+.nav-ul li a:hover {
+    color: #FBFFB9;
 }
 
 header ul li {
@@ -123,6 +132,7 @@ header ul li a:hover {
     background-color: palegreen;
     border: 2px solid palegreen;
     border-radius: 35px;
+    font-weight: bold;
 }
 
 /*SECCION 1*/
@@ -138,6 +148,7 @@ header ul li a:hover {
 .estilo-h3 {
     text-align: center;
     margin-top: 5px;
+    font-weight: bold;
     color: #754F44;
 }
 
@@ -289,6 +300,38 @@ footer {
     margin-top: 5px;
 }
 
+.productos-h3{
+    font-weight: bold;
+}
+
+.productos-tienda{
+    width: 10rem;
+}
+
+.productos-tienda-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.productos-h5{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.productos-margen{
+    margin-left: 0.15rem;
+    margin-bottom: 0.15rem;
+    margin-top: 0.25rem;
+}
+
+.productos-remera{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*
 .productos-tienda {
     display: flex;
     flex-direction: column;
@@ -318,7 +361,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
 }
-
+*/
 
 /*   SECCION ADOPTA   */
 

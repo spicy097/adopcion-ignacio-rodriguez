@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="./../css/estilos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,33 +31,36 @@
             </nav>
         </header>
         <section class="contacto-section1">
-            <p class="contacto-section1-p">Si querés ponerte en contacto con nosotros, por favor, completá el siguiente formulario:</p>
+            <p class="contacto-section1-p">Si querés ponerte en contacto con nosotros, por favor, completá el siguiente
+                formulario:</p>
         </section>
         <section class="contacto-section2 contacto-section2-p">
-            <form class="contacto-form" action="#" method="get">
-                <label class="contacto-label" for="nombre">Nombre y apellido:</label>
-                
-                <input class="contacto-input" type="text" name="nombre" placeholder="Nombre y apellido" required>
-                
-                <label class="contacto-label" for="edad">Edad:</label>
-                
-                <input class="contacto-input" type="number" name="edad" placeholder="Edad" required>
-                
-                <label class="contacto-label" for="mail">Mail:</label>
-                
-                <input class="contacto-input" type="email" name="mail" placeholder="Mail" required>
-
-                <p class="contacto-label">Asunto</p>
-                
-                <select class="contacto-input" name="asunto">
-                    <option value="adopcion">Adopción</option>
-                    <option value="sugerencias">Sugerencias</option>
-                    <option value="reclamo">Reclamo</option>
-                </select>
-
-                <p class="contacto-label">Tu mensaje:</p>
-                <textarea name="mensaje" id="" cols="30" rows="10" required></textarea>
-                <input class="contacto-input contacto-button" type="submit">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Nombre y apellido:</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre y apellido"
+                        required>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom02" class="form-label">Edad:</label>
+                    <input type="number" class="form-control" id="validationCustom02" placeholder="Edad" required>
+                </div>
+                <div class="col-md-12">
+                    <label for="validationCustom03" class="form-label">Mail:</label>
+                    <input type="email" class="form-control" id="validationCustom03" placeholder="Mail" required>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom05" class="form-label">Asunto:</label>
+                    <select class="form-select" id="validationCustom05" required>
+                        <option value="adopcion">Adopción</option>
+                        <option value="sugerencias">Sugerencias</option>
+                        <option value="reclamo">Reclamo</option>
+                    </select>
+                </div>
+                <textarea class="form-control" placeholder="Escribir aquí." id="floatingTextarea2" style="height: 100px" required></textarea>
+                <div class="col-12">
+                    <button class="btn btn-primary contacto-button" type="submit">Enviar</button>
+                </div>
             </form>
         </section>
         <footer class="contacto-footer">
@@ -67,7 +72,37 @@
                 </ul>
             </div>
         </footer>
-      </div>
+    </div>
+
+
+    <script type="text/javascript">
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
