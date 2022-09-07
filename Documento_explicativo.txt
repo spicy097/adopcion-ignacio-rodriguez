@@ -1,0 +1,10 @@
+-Cambio de título de cada sección.
+-Agregadas keywords en cada sección:
+Keywords index: "adopcion, perros, perros ciudad de mendoza, donacion, veterinario"
+Keywords galeria: "fotos, perro, galeria de fotos, animales, perros rescatados, perros adoptados"
+Keywords tienda: "tienda mascotas, mascota, pretales, correas, remera, collares con identificacion"
+Keywords adopta: "adopcion perros, adoptar, perros en mendoza, adoptar perros mendoza"
+Keywords contacto: "contacto, sugerencia, reclamo de adopcion, formulario de contacto"
+-Agregada una descripción a cada sección.
+-Cambio de CSS a SCSS.
+-Agregado un extend y un mixin simples.

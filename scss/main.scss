@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Estilo de secciones
+@import './components/index.scss';
+@import './components/galeria.scss';
+@import './components/tienda.scss';
+@import './components/adopta.scss';
+@import './components/contacto.scss';
+
+body {
+    background-color: #FBFFB9;
+    font-family: 'Albert Sans', sans-serif;
+    
+}
+
+/*NAV*/
+nav {
+    background-color: #754F44;
+    border-radius: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+/*Comportamiento bootstrap. Agregado padding y margin 0 y align-items: center (antes no estaba)*/
+.ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+
+    li {
+        a {
+            &:hover {
+                color: #FBFFB9;
+            }
+        }
+    }
+}
+
+header {
+    ul {
+        li {
+            display: inline;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                text-align: center;
+                color: #FBFFB9;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-right: 5px;
+                margin-left: 5px;
+                padding-bottom: 20px;
+                padding-top: 20px;
+
+                &:hover {
+                    background-color: rgba(237, 198, 157, 0.2);
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+}
+
+/*Titulos h2*/
+.h2 {
+    text-align: center;
+    margin-top: 10px;
+    background-color: palegreen;
+    border: 2px solid palegreen;
+    border-radius: 35px;
+    font-weight: bold;
+}
+
+/*TODAS LAS SECCIONES*/
+.p {
+    text-align: center;
+    margin-top: 10px;
+    background-color: rosybrown;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/*TODAS LAS SECCIONES*/
+.h3 {
+    text-align: center;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #754F44;
+}
+
+/*FOOTER*/
+.footer-ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+footer {
+    background-color: #754F44;
+
+    ul {
+        li {
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 10px;
+                color: #FBFFB9;
+            }
+        }
+    }
+}
+
+//Mediaquery
+@import './mediaquerys/mediaquery.scss';

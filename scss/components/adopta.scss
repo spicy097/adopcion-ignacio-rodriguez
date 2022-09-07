@@ -1,0 +1,80 @@
+/*   SECCION ADOPTA   */
+
+.adopta-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header"
+        "adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1"
+        "adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2"
+        "adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3"
+        "adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer"
+    ;
+}
+
+.adopta-header {
+    grid-area: adopta-header;
+}
+
+.adopta-section1 {
+    grid-area: adopta-section1;
+}
+
+.adopta-section2 {
+    grid-area: adopta-section2;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.adopta-section3 {
+    grid-area: adopta-section3;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.adopta-footer {
+    grid-area: adopta-footer;
+}
+
+.adopta-p {
+    color: #754F44;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.adopta-textos {
+    @extend .intro-p-tienda;
+    color: #754F44;
+    font-size: 1.1rem;
+}
+
+.adopta-h3 {
+    color: #754F44;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.adopta-div-img {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    img{
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}
+
+.img-anim {
+    transition: transform .2s;
+    &:hover {
+        filter: saturate(180%);
+        transform: scale(1.1);
+    }
+}
+

@@ -1,0 +1,83 @@
+/*MOBILE FIRST*/
+/*   SECCION TIENDA    */
+.tienda-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header"
+        "tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1"
+        "tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares"
+        "tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas"
+        "tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera"
+        "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+    ;
+}
+
+.tienda-header {
+    grid-area: tienda-header;
+}
+
+.tienda-section1 {
+    grid-area: tienda-section1;
+    margin-bottom: 10px;
+}
+
+.tienda-collares {
+    grid-area: tienda-collares;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tienda-correas {
+    grid-area: tienda-correas;
+}
+
+.tienda-remera {
+    grid-area: tienda-remera;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.galeria-footer {
+    grid-area: galeria-footer;
+}
+
+.intro-p-tienda {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.productos-h3 {
+    font-weight: bold;
+}
+
+.productos-tienda {
+    width: 10rem;
+}
+
+.productos-tienda-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.productos-h5 {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.productos-margen {
+    margin-left: 0.15rem;
+    margin-bottom: 0.15rem;
+    margin-top: 0.25rem;
+}
+
+.productos-remera {
+    text-align: center;
+    font-weight: bold;
+}

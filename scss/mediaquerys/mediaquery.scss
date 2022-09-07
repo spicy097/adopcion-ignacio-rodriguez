@@ -1,0 +1,207 @@
+/*MEDIAQUERYS*/
+/*MOBILE FIRST*/
+/*SECCION INDEX*/
+@media (min-width: 768px) {
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto 1fr auto;
+        grid-template-areas:
+            ". . header header header header header header . ."
+            ". . banner banner banner banner banner banner . ."
+            ". . section1 section1 section1 section1 section1 section1 . ."
+            ". . section2 section2 section2 section2 section2 section2 . ."
+            ". . section3 section3 section3 section3 section3 section3 . ."
+            ". . section4 section4 section4 section4 section4 section4 . ."
+            "footer footer footer footer footer footer footer footer footer footer";
+    }
+
+    /*HEADER*/
+    .header {
+        grid-area: header;
+        /*FLEX HEADER INDEX*/
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*NAVEGACION HEADER*/
+    .ul {
+        display: flex;
+        justify-content: normal;
+        width: auto;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        ul {
+            li {
+                a {
+                    text-align: center;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+    /*FIN NAVEGACION HEADER*/
+
+    /*BANNER INICIAL*/
+    .banner {
+        margin-top: 20px;
+    }
+
+    /*TITULO H2*/
+    .h2 {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+    /*SECCION 2 = KOKOA*/
+    .section2 {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .rectangulo {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /*SECCION 3 = TOBI*/
+    .section3 {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*SECCION 4 = JENNY*/
+    .section4 {
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    /*FIN INDEX*/
+
+    /*SECCION GALERIA*/
+    .galeria-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            ". . galeria-header galeria-header galeria-header galeria-header galeria-header galeria-header . ."
+            ". . galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 galeria-section1 . ."
+            ". . galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa galeria-kokoa . ."
+            ". . galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi galeria-tobi . ."
+            ". . galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny galeria-jenny . ."
+            "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+        ;
+    }
+
+    .galeria-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .fotos-galeria{
+        img {
+            margin-right: 5px;
+        }
+    } 
+
+    /*FIN SECCION GALERIA*/
+
+    /*SECCION TIENDA*/
+    .tienda-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            ". . tienda-header tienda-header tienda-header tienda-header tienda-header tienda-header . ."
+            ". . tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 tienda-section1 . ."
+            ". . tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares . ."
+            ". . tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas . ."
+            ". . tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera . ."
+            "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+        ;
+    }
+
+    .tienda-header {
+        display: flex;
+        align-items: center;
+    }
+
+    /*FIN SECCION TIENDA*/
+
+    /*SECCION ADOPTA*/
+    .adopta-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+            ". . adopta-header adopta-header adopta-header adopta-header adopta-header adopta-header . ."
+            ". . adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 adopta-section1 . ."
+            ". . adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 adopta-section2 . ."
+            ". . adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 adopta-section3 . ."
+            "adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer adopta-footer"
+        ;
+    }
+
+    .adopta-section2 {
+        align-items: center;
+    }
+
+    .adopta-section3 {
+        align-items: center;
+    }
+
+    .adopta-div-img {
+        flex-direction: row;
+    }
+
+    .adopta-div-img img {
+        margin-left: 5px;
+    }
+
+    .adopta-header {
+        display: flex;
+        align-items: center;
+    }
+
+    /*FIN SECCION ADOPTA*/
+
+    /*SECCION CONTACTO*/
+    .contacto-grid-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            ". . contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header . ."
+            ". . contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 . ."
+            ". . contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 . ."
+            "contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer"
+        ;
+    }
+
+    .contacto-header {
+        display: flex;
+        align-items: center;
+    }
+
+    .contacto-form {
+        align-items: flex-start;
+    }
+
+    .contacto-button {
+        margin-top: 5px;
+    }
+
+    /*FIN SECCION CONTACTO*/
+}

@@ -1,0 +1,57 @@
+/*   SECCION CONTACTO   */
+
+.contacto-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header"
+        "contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1"
+        "contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2"
+        "contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer"
+    ;
+}
+
+.contacto-header {
+    grid-area: contacto-header;
+}
+
+.contacto-section1 {
+    grid-area: contacto-section1;
+}
+
+.contacto-section2 {
+    grid-area: contacto-section2;
+    margin-top: 10px;
+}
+
+.contacto-footer {
+    grid-area: contacto-footer;
+    margin-top: 10px;
+}
+
+.contacto-section1__p {
+    color: #754F44;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contacto-section2-p {
+    color: #754F44;
+    font-weight: bold;
+}
+
+.contacto-label {
+    margin-top: 10px;
+}
+
+.contacto-input {
+    padding: 5px;
+}
+
+.contacto-form {
+    display: flex;
+    flex-direction: column;
+}
