@@ -350,7 +350,8 @@ header ul li {
 /*FOOTER*/
 .footer-ul {
   list-style-type: none;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0; }
 
 footer {
   background-color: #754F44; }
@@ -434,6 +435,8 @@ footer {
   .tienda-header {
     display: flex;
     align-items: center; }
+  .productos-tienda {
+    width: 16rem; }
   /*FIN SECCION TIENDA*/
   /*SECCION ADOPTA*/
   .adopta-grid-container {
