@@ -37,7 +37,7 @@
   flex-direction: column-reverse;
   align-items: stretch;
   padding: 20px;
-  background-color: #FDD692;
+  background-color: white;
   border-radius: 40px; }
 
 .section2__img {
@@ -50,7 +50,7 @@
   align-items: stretch;
   margin-top: 1rem;
   padding: 20px;
-  background-color: #FDD692;
+  background-color: white;
   border-radius: 40px; }
 
 .section3__img {
@@ -63,7 +63,7 @@
   align-items: stretch;
   margin-top: 1rem;
   padding: 20px;
-  background-color: #FDD692;
+  background-color: white;
   border-radius: 40px;
   margin-bottom: 1rem; }
 
