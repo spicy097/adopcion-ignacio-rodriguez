@@ -130,7 +130,7 @@
             ". . tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares tienda-collares . ."
             ". . tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas tienda-correas . ."
             ". . tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera tienda-remera . ."
-            "galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer galeria-footer"
+            "tienda-footer tienda-footer tienda-footer tienda-footer tienda-footer tienda-footer tienda-footer tienda-footer tienda-footer tienda-footer"
         ;
     }
 
@@ -141,6 +141,10 @@
 
     .productos-tienda {
         width: 16rem;
+    }
+
+    .tienda-footer{
+        margin-top: 1rem;
     }
 
     /*FIN SECCION TIENDA*/
@@ -185,7 +189,7 @@
     /*SECCION CONTACTO*/
     .contacto-grid-container {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10vh 10vh 65vh 15vh;
+        grid-template-rows: 10vh 10vh 55vh 25vh;
         grid-template-areas:
             ". . contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header . ."
             ". . contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 . ."
@@ -208,4 +212,5 @@
     }
 
     /*FIN SECCION CONTACTO*/
+    
 }

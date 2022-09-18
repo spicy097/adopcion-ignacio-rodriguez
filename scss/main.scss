@@ -114,6 +114,28 @@ header {
     padding-left: 0;
 }
 
+.footer-all{
+    margin-top: 1rem;
+    color: white;
+    padding: 20px;
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+
+    .links{
+        margin-top: 0.5rem;
+    }
+
+    .redes{
+        margin-left: 0.7rem;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
 footer {
     background-color: #754F44;
 
