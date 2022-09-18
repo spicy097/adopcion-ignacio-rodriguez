@@ -459,7 +459,7 @@ footer {
   /*SECCION CONTACTO*/
   .contacto-grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: 10vh 10vh 65vh 15vh;
     grid-template-areas: ". . contacto-header contacto-header contacto-header contacto-header contacto-header contacto-header . ." ". . contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 contacto-section1 . ." ". . contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 contacto-section2 . ." "contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer contacto-footer"; }
   .contacto-header {
     display: flex;
