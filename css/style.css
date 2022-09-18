@@ -77,7 +77,6 @@
 
 .rectangulo__p {
   text-align: center;
-  font-weight: bold;
   margin-top: 5px;
   border: 2px solid #754F44;
   padding: 20px; }
@@ -296,7 +295,7 @@
 
 body {
   background-color: #FFFCE2;
-  font-family: 'Albert Sans', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
 
 h1 {
   color: #754F44;
@@ -348,7 +347,7 @@ header ul li {
   margin-top: 10px;
   background-color: palegreen;
   border: 2px solid palegreen;
-  border-radius: 35px;
+  border-radius: 15px;
   font-weight: bold; }
 
 /*TODAS LAS SECCIONES*/
@@ -356,7 +355,7 @@ header ul li {
   text-align: center;
   margin-top: 10px;
   background-color: rosybrown;
-  border-radius: 25px;
+  border-radius: 15px;
   font-weight: bold; }
 
 /*TODAS LAS SECCIONES*/
