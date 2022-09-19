@@ -27,8 +27,25 @@ h1{
 
 /*NAV*/
 nav {
-    background-color: #754F44;
-    border-radius: 20px;
+    //background-color: #754F44;
+    //border-radius: 20px;
+    .nav-color{
+        background-color: #754F44;
+        
+        border-radius: 20px;
+    }
+    .nav-div{
+        ul{
+            li {
+                a {
+                    color: #FBFFB9;
+                    &:hover {
+                        color: #FBFFB9;
+                    }
+                }
+            }
+        }
+    }
 }
 
 .logo {
