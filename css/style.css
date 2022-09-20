@@ -144,6 +144,11 @@
   grid-area: tienda-section1;
   margin-bottom: 10px; }
 
+.tienda-footer {
+  grid-area: tienda-footer;
+  display: flex;
+  justify-content: center; }
+
 .tienda-collares {
   grid-area: tienda-collares;
   display: flex;
@@ -218,7 +223,9 @@
   align-items: stretch; }
 
 .adopta-footer {
-  grid-area: adopta-footer; }
+  grid-area: adopta-footer;
+  display: flex;
+  justify-content: center; }
 
 .adopta-p {
   color: #754F44;
@@ -270,7 +277,9 @@
 
 .contacto-footer {
   grid-area: contacto-footer;
-  margin-top: 10px; }
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; }
 
 .contacto-section1__p {
   color: #754F44;
@@ -318,18 +327,6 @@ nav .nav-div ul li a {
   display: flex;
   justify-content: center; }
 
-/*Comportamiento bootstrap. Agregado padding y margin 0 y align-items: center (antes no estaba)*/
-.ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  padding: 0;
-  margin: 0;
-  height: 70px; }
-  .ul li a:hover {
-    color: #FBFFB9; }
-
 header ul li {
   display: inline; }
   header ul li a {
@@ -341,7 +338,6 @@ header ul li {
     padding-right: 5px;
     margin-right: 5px;
     margin-left: 5px;
-    padding-bottom: 20px;
     padding-top: 20px; }
     header ul li a:hover {
       background-color: rgba(237, 198, 157, 0.2);

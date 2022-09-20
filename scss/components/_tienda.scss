@@ -23,6 +23,12 @@
     margin-bottom: 10px;
 }
 
+.tienda-footer{
+    grid-area: tienda-footer;
+    display: flex;
+    justify-content: center;
+}
+
 .tienda-collares {
     grid-area: tienda-collares;
     display: flex;

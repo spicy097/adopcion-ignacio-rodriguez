@@ -28,6 +28,8 @@
 .contacto-footer {
     grid-area: contacto-footer;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .contacto-section1__p {
